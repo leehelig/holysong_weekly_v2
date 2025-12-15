@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "257997339909",
+    "project_id": "holysong-by-flutter",
+    "storage_bucket": "holysong-by-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257997339909:android:c1ce44ae4e236ed1aa4b6c",
+        "android_client_info": {
+          "package_name": "com.holysong.holysong_weekly_v2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAJsgw1mtDvQHniqiUFqeHiRYT0ye58C8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257997339909:android:55377ccb183f9418aa4b6c",
+        "android_client_info": {
+          "package_name": "org.bethelquire.bethelquire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAJsgw1mtDvQHniqiUFqeHiRYT0ye58C8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
