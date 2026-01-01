@@ -9,7 +9,7 @@
 |------|--------|
 | Model | ✅ 100% |
 | Repository | ✅ 100% |
-| Service | 🟡 60% |
+| Service | 🟡 65% |
 | ViewModel | 🟡 40% |
 | UI | 🟡 50% |
 | Admin (HTML) | 🔴 30% |
@@ -58,7 +58,7 @@
 ## ⏳ In Progress
 
 ### 🧱 Service
-- Task 21 — publish(weekly)
+
 - Task 22 — updateAnnouncement
 - Task 23 — updateSong
 - Task 24 — updateAudio
@@ -115,11 +115,3 @@
 
 📌 이 문서는 **사실 기록용**이다.  
 느낌, 추측, 희망은 적지 않는다.
-## 2026-01-02
-- Task 21 — publish(weekly): ✅ 완료 (TDD: 검증/상태전이/updatedAt/저장 호출)
-- 테스트: `weekly_worship_service_publish_test.dart` All green
-- 커밋: feat(service): implement publish() with TDD (Task 21)
-
-### 현황 업데이트
-- Service 진행률: 60% → 65% (Task 21 완료 반영)
-- 다음 작업: Task 22~25(update 계열) TDD → 구현
