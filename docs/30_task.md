@@ -1,85 +1,52 @@
-# 30_task.md — Weekly Worship Function-level Tasks (Updated Progress)
-
-## 1. Model Layer Tasks (WeeklyWorship, SongInfo)
-
-### 📌 WeeklyWorship
-- [x] **Task 1 — fromMap(map) 구현**
-- [x] **Task 2 — toMap() 구현**
-- [x] **Task 3 — copyWith() 구현**
-- [x] **Task 4 — updatedAt 필드 반영**
-
-### 📌 SongInfo
-- [x] **Task 5 — fromMap()**
-- [x] **Task 6 — toMap()**
-- [x] **Task 7 — copyWith()**
+# 30_task.md — Current Execution Tasks
+(Updated: 2025-12-16)
 
 ---
 
-## 2. Repository Layer Tasks (Port + Implementation)
-
-### 📌 Abstract Repository
-- [x] **Task 8 — fetch(date)**
-- [x] **Task 9 — watch(date)**
-- [x] **Task 10 — save(weekly)**
-- [x] **Task 11 — uploadScorePdf()**
-
-### 📌 Implementation
-- [x] **Task 12 — _doc(date)**
-- [x] **Task 13 — fetch(date)**
-- [x] **Task 14 — watch(date)**
-- [x] **Task 15 — save(weekly)**
-- [x] **Task 16 — uploadScorePdf(date, part, file)**
-- [x] **Task 17 — _validateScorePart(part)**
+## 🎯 Current Focus
+Service Layer 안정화 (TDD 기반)
 
 ---
 
-## 3. Service Layer Tasks (비즈니스 규칙)
+## ✅ Done
 
-### 📌 WeeklyWorshipService
-- [x] **Task 18 — load(date)**  
-- [x] **Task 19 — watch(date)**  
-- [ ] **Task 20 — saveDraft(weekly)**  
-- [ ] **Task 21 — publish(weekly)**  
-- [ ] **Task 22 — updateAnnouncement(value)**  
-- [ ] **Task 23 — updateSong(songInfo)**  
-- [ ] **Task 24 — updateAudio(part, urls)**  
-- [ ] **Task 25 — updateScore(part, url)**  
+### Task 18 — load(date)
+- [x] date empty → ArgumentError
+- [x] not found → StateError
+- [x] repository.fetch
+- [x] 테스트 통과
 
----
+### Task 19 — watch(date)
+- [x] date empty → ArgumentError
+- [x] repository.watch 위임
+- [x] Stream 정상 동작
+- [x] 테스트 통과
 
-## 4. ViewModel Layer Tasks
-
-### 📌 WeeklyWorshipViewModel
-- [ ] **Task 26 — load(date)**
-- [ ] **Task 27 — subscribe(date)**
-- [ ] **Task 28 — saveDraft()**
-- [ ] **Task 29 — publish()**
-- [ ] **Task 30 — setAnnouncement()**
-- [ ] **Task 31 — setSong()**
-- [ ] **Task 32 — setAudio()**
-- [ ] **Task 33 — setScore()**
+### Task 20 — saveDraft(weekly)
+- [x] announcement 200자 초과 → throw
+- [x] song.title 비어있음 → throw
+- [x] repository.save 1회 호출
+- [x] FakeRepository + flutter_test 통과
 
 ---
 
-## 5. Validator Layer Tasks
-- [ ] **Task 34 — isValidUrl(url)**
-- [ ] **Task 35 — validateAudioCount(list)**
-- [ ] **Task 36 — validateScoreKeys(scores)**
-- [ ] **Task 37 — canPublish(weekly)**
+## ⏳ Next Tasks
+
+### ⬜ Task 21 — publish(weekly)
+- [ ] publish 가능 조건 검증
+- [ ] status = published
+- [ ] updatedAt 갱신
+- [ ] repository.save 호출
+- [ ] 테스트 작성
+
+### ⬜ Task 22 — updateAnnouncement
+### ⬜ Task 23 — updateSong
+### ⬜ Task 24 — updateAudio
+### ⬜ Task 25 — updateScore
 
 ---
 
-## 6. Exceptions Tasks
-- [ ] **Task 38 — PublishGateException**
-- [ ] **Task 39 — AudioLimitExceededException**
-- [ ] **Task 40 — InvalidScorePartException**
-- [ ] **Task 41 — InvalidUrlException**
-
----
-
-## 7. End-to-End Scenario Tasks
-- [ ] **Task 42 — User Flow: load → render → subscribe**
-- [ ] **Task 43 — Admin: edit → saveDraft → publish**
-- [ ] **Task 44 — Storage 업로드 + URL 반영**
-- [ ] **Task 45 — Firestore 문서 자동 생성 테스트**
-- [ ] **Task 46 — 반응형 UI와 데이터 변경 즉시 반영 확인**
+📌 원칙
+- 테스트 → 서비스 구현 순서
+- 범위 밖 수정 금지
+- 통과한 테스트만 “완료”로 기록

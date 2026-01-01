@@ -1,42 +1,29 @@
-# task.md — Today's Execution Tasks (Updated, 2025-12-01)
+# today_task.md — 오늘 작업 요약
 
-## 🎯 오늘 목표: Service Layer 핵심 진입 (Task 20~25)
+## ✔ 오늘 완료한 작업
 
----
-
-### ✔ Task 18 — load(date) (완료)
-- [x] date empty → throw  
-- [x] fetch() 연동  
-- [x] fetch 결과 없으면 throw  
-- TDD 완료
-
-### ✔ Task 19 — watch(date) (완료)
-- [x] repository.watch 위임  
-- [x] Stream 정상 동작  
-- TDD 완료
+- WeeklyWorshipService.saveDraft 구현
+- Fake Repository 기반 단위 테스트 작성
+- 예외 타입/비즈니스 규칙 검증 완료
+- flutter test 통과
+- git status clean 확인
 
 ---
 
-## ▶ 지금 해야 할 작업 (첫 번째 미완료 태스크)
+## 📌 오늘의 핵심 성과
 
-### ⬜ Task 20 — saveDraft(weekly)
-- [ ] announcement ≤ 200자  
-- [ ] song.title 필수  
-- [ ] repository.save 호출  
-- TDD:
-  - [ ] announcement 길이 초과 → throw  
-  - [ ] song.title 없음 → throw  
-  - [ ] 정상 weekly → save 호출됨  
+- Service Layer의 첫 “비즈니스 규칙 중심 함수” 완성
+- Repository / Service / Test 분리 구조 확립
+- Mock 없이도 테스트 가능한 구조 학습
 
 ---
 
-## 다음 우선순위 (Task 21~25)
-- [ ] publish()  
-- [ ] updateAnnouncement  
-- [ ] updateSong  
-- [ ] updateAudio  
-- [ ] updateScore
+## ▶ 다음 작업 계획
+
+1. Task 21 — publish(weekly)  
+2. update 계열 함수들 (Task 22~25)  
+3. Service → ViewModel 연동 진입
 
 ---
 
-> task.md는 매일 아침 첫 번째로 열고, 하루 끝나고 반드시 업데이트한다.
+> 오늘은 **양보다 구조**를 제대로 만든 날
