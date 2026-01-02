@@ -32,12 +32,12 @@ Service Layer 안정화 (TDD 기반)
 
 ## ⏳ Next Tasks
 
-### ⬜ Task 21 — publish(weekly)
-- [ ] publish 가능 조건 검증
-- [ ] status = published
-- [ ] updatedAt 갱신
-- [ ] repository.save 호출
-- [ ] 테스트 작성
+### ✅ Task 21 — publish(weekly)
+- [x] publish 가능 조건 검증
+- [x] status = published
+- [x] updatedAt 갱신
+- [x] repository.save 호출
+- [x] 테스트 작성 및 통과
 
 ### ⬜ Task 22 — updateAnnouncement
 ### ⬜ Task 23 — updateSong

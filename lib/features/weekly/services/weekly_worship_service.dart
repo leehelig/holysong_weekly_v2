@@ -31,4 +31,24 @@ class WeeklyWorshipService {
     await repository.save(updated);
     return updated;
   }
+
+// ✅ Task 22 — updateAnnouncement
+  Future<WeeklyWorship> updateAnnouncement(String date, String text) async {
+    final trimmed = text.trim();
+    if (trimmed.length > 200) {
+      throw ArgumentError('announcement length > 200');
+    }
+
+    // 존재 문서만 업데이트
+    final current = await repository.fetch(date);
+
+    final updated = current.copyWith(
+      announcement: trimmed,
+      updatedAt: DateTime.now(),
+    );
+
+    await repository.save(updated);
+    return updated;
+  }
+
 }
