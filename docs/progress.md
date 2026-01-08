@@ -115,3 +115,56 @@
 
 📌 이 문서는 **사실 기록용**이다.  
 느낌, 추측, 희망은 적지 않는다.
+## 2026-01-03
+- Task 22 — updateAnnouncement: ✅ 완료 (TDD: 200자 검증, 존재 문서만 업데이트, updatedAt 갱신, save 1회)
+- 테스트: weekly_worship_service_update_announcement_test.dart All green
+
+### 현황 업데이트
+- Service 진행률: 65% → 70%
+- 다음 작업: Task 23~25(updateSong/Audio/Score) TDD → 구현
+# Progress — Weekly Worship (as of 2026-01-07)
+
+
+## 📊 Overall Progress Summary
+| Layer | Status |
+|------|--------|
+| Model | ✅ 100% |
+| Repository | ✅ 100% |
+| Service | 🟡 **75%** |
+| ViewModel | 🟡 40% |
+| UI | 🟡 50% |
+| Admin (HTML) | 🔴 30% |
+| Docs / Architecture | 🟢 85% |
+
+
+> Note: Service 진행률은 Task 23 완료 반영(70% → **75%**).
+
+
+---
+
+
+## ✔ Completed
+- Task 18 — load
+- Task 19 — watch
+- Task 20 — saveDraft
+- Task 21 — publish
+- Task 22 — updateAnnouncement
+- **Task 23 — updateSong** *(2026-01-07, commit: c06d8af)*
+- date 공백 → ArgumentError
+- not found → StateError
+- song.title 공백 → ArgumentError
+- 지정 필드만 갱신, updatedAt 갱신, 저장 1회
+- 테스트: `test/services/weekly_worship_service_update_song_test.dart` All green
+
+
+## ⏳ In Progress / Next
+- Task 24 — updateAudio
+- Task 25 — updateScore
+
+
+---
+
+
+## 🧾 History
+- **2026-01-07**: Task 23 — updateSong 완료 (Extension 방식 구현, 테스트 통과, commit `c06d8af`). Service 진행률 70% → 75%.
+- **2026-01-03**: (이전 기록 유지)
