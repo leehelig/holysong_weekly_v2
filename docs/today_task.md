@@ -2,28 +2,20 @@
 
 ## ✔ 오늘 완료한 작업
 
-- WeeklyWorshipService.saveDraft 구현
+- WeeklyWorshipService.publish 구현
 - Fake Repository 기반 단위 테스트 작성
-- 예외 타입/비즈니스 규칙 검증 완료
-- flutter test 통과
-- git status clean 확인
-
----
+- 검증(announcement ≤ 200, song.title 필수), 상태 전이(draft→published), updatedAt 갱신 확인
+- repository.save 1회 호출 검증
+- flutter test 통과 / git status clean / commit 완료
+- updateAnnouncement 구현 + 테스트 통과
 
 ## 📌 오늘의 핵심 성과
 
-- Service Layer의 첫 “비즈니스 규칙 중심 함수” 완성
-- Repository / Service / Test 분리 구조 확립
-- Mock 없이도 테스트 가능한 구조 학습
-
----
+- Service Layer의 퍼블리시 규칙을 테스트로 고정
+- Repository 위임 구조와 단방향 원칙 재확인
 
 ## ▶ 다음 작업 계획
-
-1. Task 21 — publish(weekly)  
-2. update 계열 함수들 (Task 22~25)  
-3. Service → ViewModel 연동 진입
-
----
-
-> 오늘은 **양보다 구조**를 제대로 만든 날
+2. Task 23 — updateSong (TDD → 구현)
+3. Task 24 — updateAudio (TDD → 구현)
+4. Task 25 — updateScore (TDD → 구현)
+5. Service → ViewModel 연동 테스트 설계
